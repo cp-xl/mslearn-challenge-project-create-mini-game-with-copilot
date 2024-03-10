@@ -20,6 +20,7 @@ def play_game():
         (user_choice == "paper" and computer_choice == "rock")
     ):
         print("You win!")
+        player_score += 1
     else:
         print("Computer wins!")
 
@@ -27,4 +28,6 @@ def play_game():
     if play_again == "yes":
         play_game()
 
+player_score = 0
 play_game()
+print(f"Your score: {player_score}")
